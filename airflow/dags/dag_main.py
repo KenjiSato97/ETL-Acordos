@@ -22,7 +22,7 @@ default_args = {
 @dag(
     dag_id='main_dag',
     default_args=default_args,
-    description='DAG responsavel pelo ETL do case Acordos Internacionais na Área de Energia. Dados vindos da API do google sheets',
+    description='DAG responsavel pela ETL do case Acordos Internacionais na Área de Energia. Dados vindos da API do google sheets',
     schedule_interval=timedelta(days=1),
     catchup=False
 )

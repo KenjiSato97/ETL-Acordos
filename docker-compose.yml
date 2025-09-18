@@ -2,7 +2,7 @@
 
 services:
     postgres:
-        image: postgres:13.3
+        image: postgres:17.6
         healthcheck:
             test: ["CMD", "pg_isready", "-q","postgres", "-U", "root"]
             timeout: 45s
